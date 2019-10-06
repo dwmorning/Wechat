@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>招生计划</title><meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+    <link rel="stylesheet" href="./public/style/weui.css"/>
+    <link rel="stylesheet"  type="text/css" href="./public/style/example.css"/>
+    <script src="./public/style/jquery-3.4.1.js"  type="text/javascript"></script>
+    <script type='text/javascript' src='./public/style/zepto.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+    <script>
+        var stateArray = ["none", "block"];
+        function expend(a) {
+            var next = $(a).next();
+            var state = $(next).attr("state");
+            switch (state) {
+                case "1":
+                    state = "0"
+                    break;
+                default:
+                    state = "1"
+                    break;
+            }
+            $(next).attr("state", state).css("display", stateArray[state]);
+        }
+    </script>
+</head>
+<body>
+
+<div>
+
+    <div class="page input js_show">
+        <div class="page__hd">
+            <h1 class="page__title">招生计划</h1>
+            <p class="page__desc">查询今年招生计划</p>
+        </div>
+        <div class="page__bd">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">省份</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <select class="weui-select"  id="Province">
+                        <option selected="selected" value="四川">四川</option>
+                        <option value="北京">北京</option>
+                        <option value="天津">天津</option>
+                        <option value="河北">河北</option>
+                        <option value="山西">山西</option>
+                        <option value="内蒙古">内蒙古</option>
+                        <option value="辽宁">辽宁</option>
+                        <option value="吉林">吉林</option>
+                        <option value="黑龙江">黑龙江</option>
+                        <option value="上海">上海</option>
+                        <option value="江苏">江苏</option>
+                        <option value="浙江">浙江</option>
+                        <option value="安徽">安徽</option>
+                        <option value="福建">福建</option>
+                        <option value="江西">江西</option>
+                        <option value="山东">山东</option>
+                        <option value="河南">河南</option>
+                        <option value="湖北">湖北</option>
+                        <option value="湖南">湖南</option>
+                        <option value="广东">广东</option>
+                        <option value="广西">广西</option>
+                        <option value="海南">海南</option>
+                        <option value="重庆">重庆</option>
+                        <option value="贵州">贵州</option>
+                        <option value="云南">云南</option>
+                        <option value="陕西">陕西</option>
+                        <option value="甘肃">甘肃</option>
+                        <option value="新疆">新疆</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">科类</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <select class="weui-select" id="Division">
+                        <option selected="selected" value="理工">理工</option>
+                        <option value="文史">文史</option>
+                        <option value="艺术类">艺术类</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">批次</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <select class="weui-select" id="Batch">
+                        <option selected="selected" value="一本批次">一本批次</option>
+                        <option value="二本批次">二本批次</option>
+                        <option value="综合改革及普通本科招生">综合改革及普通本科招生</option>
+                        <option value="国家专项">国家专项</option>
+                        <option value="地方专项">地方专项</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui-btn-area">
+                <button type="button" class="weui-btn weui-btn_primary" id="BindBtn">搜索</button>
+            </div>
+            <div class="weui-cells__title" id="search_result">
+            </div>
+            <div class="user-body" id="user-body">
+
+            </div>
+            <div class="user-footer">
+                <div class="weui-loadmore" id="pager" style="margin-bottom: 20px; min-height: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- loading toast -->
+    <div id="loadingToast" style="display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-loading weui-icon_toast"></i>
+            <p class="weui-toast__content">数据加载中</p>
+        </div>
+    </div>
+    <script>
+        var pageIndex = 0;
+        var stateArray = ["none", "block"];
+        function expend(a) {
+            var next = $(a).next();
+            var state = $(next).attr("state");
+            switch (state) {
+                case "1":
+                    state = "0"
+                    break;
+                default:
+                    state = "1"
+                    break;
+            }
+            $(next).attr("state", state).css("display", stateArray[state]);
+        }
+        function showLoad() {
+            $("#loadingToast").css("display", "block");
+            $("#BindBtn").attr("state", "1").attr("disabled", "disabled")
+                .addClass("weui-btn_disabled")
+                .addClass("weui-btn_loading")
+                .append("<i class=\"weui-loading\"></i>");
+        }
+        function hideLoad() {
+            $("#loadingToast").css("display", "none");
+            $("#BindBtn").attr("state", "0")
+                .removeAttr("disabled")
+                .removeClass("weui-btn_disabled")
+                .removeClass("weui-btn_loading")
+                .empty().append("搜索");
+        }
+        function load() {
+            showLoad();
+            //$('.pager').empty().append('<i class="weui-loading"></i><span class="weui-loadmore__tips">正在加载</span>');
+            Province =$("#Province").find("option:selected").text();
+            Division=$("#Division").find("option:selected").text();
+            Batch=$("#Batch").find("option:selected").text();
+            $.ajax({
+                url: 'http://localhost:8003/get?'+'Province=' + Province +  'Batch=' + Batch + 'Division='+Division ,
+                type: "get",
+                data:{
+                    province:Province,
+                    division:Division,
+                    batch:Batch
+                },
+                dataType: "json",
+                success: function (res) {
+                    hideLoad();
+                    if (res.length > 0) {
+                        $.each(res, function (i, item) {
+                            var li = '<div class="weui-cells" style="margin-top:0">' +
+                                '<a class="weui-cell weui-cell_access" href="javascript:;" onclick="javascript:expend(this);">' +
+                                '<div class="weui-cell__bd weui-cell_primary">' +
+                                '  <p>' + item.Profession + '</p>' +
+                                '</div>' +
+                                '<span class="weui-cell__ft">' + item.Numbers + '人</span>' +
+                                '</a>' +
+                                '<div class="weui-form-preview" style="display:none">' +
+                                ' <div class="weui-form-preview__bd">' +
+                                ' <div class="weui-form-preview__item">' +
+                                '   <label class="weui-form-preview__label">招生省份</label>' +
+                                '  <span class="weui-form-preview__value">' + item.Province + ' </span>' +
+                                ' </div>' +
+                                ' <div class="weui-form-preview__item">' +
+                                '   <label class="weui-form-preview__label">所属学院</label>' +
+                                '  <span class="weui-form-preview__value">' + item.College + ' </span>' +
+                                ' </div>' +
+                                ' <div class="weui-form-preview__item">' +
+                                '  <label class="weui-form-preview__label">专业名称</label>' +
+                                ' <span class="weui-form-preview__value">' + item.Profession + '</span>' +
+                                ' </div>' +
+                                ' <div class="weui-form-preview__item">' +
+                                '  <label class="weui-form-preview__label">学制</label>' +
+                                ' <span class="weui-form-preview__value">' + item.System + '年</span>' +
+                                ' </div>' +
+                                ' <div class="weui-form-preview__item">' +
+                                '  <label class="weui-form-preview__label">收费标准</label>' +
+                                ' <span class="weui-form-preview__value">' + item.Tuition + '元/年</span>' +
+                                ' </div>' +
+                                ' <div class="weui-form-preview__item">' +
+                                ' <label class="weui-form-preview__label">招生批次</label>' +
+                                ' <spain class="weui-form-preview__value">' + item.Batch + '</spain>' +
+                                ' </div>' +
+                                ' <div class="weui-form-preview__item">' +
+                                ' <label class="weui-form-preview__label">科类</label>' +
+                                ' <span class="weui-form-preview__value">' + item.Division + '</span>' +
+                                ' </div>' +
+                                ' <div class="weui-form-preview__item">' +
+                                ' <label class="weui-form-preview__label">招生人数</label>' +
+                                ' <span class="weui-form-preview__value">' + item.Numbers + '人</span>' +
+                                ' </div>' +
+                                '<div class="weui-form-preview__item">' +
+                                ' <label class="weui-form-preview__label">授予学位</label>' +
+                                ' <span class="weui-form-preview__value">' + item.Grant + '人</span>' +
+                                ' </div>' +
+                                ' </div>' +
+
+                                '</div>';
+                            $('#user-body').append(li);
+                        });
+                        pageIndex++;
+                        $('.pager').empty().append('<a class="weui_panel_ft " style="text-align:center;color: #000" href="javascript:load();">查看更多</a>');
+                    } else {
+                        $('.pager').empty().append('<span class="weui_panel_ft " style="text-align:center;">加载完毕</span>');
+
+                        $("#search_result").text("未搜索到结果");
+                    }
+                },
+                error: function () {
+                    hideLoad();
+                    $('.pager').empty().append('<span class="weui_panel_ft " style="text-align:center;">加载完毕</span>');
+                    $("#search_result").text("未搜索到结果");
+
+                }
+            })
+        }
+        $(function () {
+            $("#BindBtn").click(function () {
+                pageIndex = 0;
+                $('#user-body').empty();
+                load();
+            });
+        })
+    </script>
+
+</div>
+<script>
+    $(function () {
+        var imgs = $("img");
+        var maxWidth = $(window).width()-50;
+        $.each(imgs, function (i, item) {
+            if ($(item).width > maxWidth) {
+                $(item).css("width", "100%");
+            }
+        });
+    })
+</script>
+</body>
+</html>

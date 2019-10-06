@@ -1,0 +1,2593 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>成信大专业</title>
+    <style type="text/css">
+        span{
+            color :red;
+        }
+    </style>
+    <link rel="stylesheet" href="./public/style/weui.css"/>
+    <link rel="stylesheet" href="./public/style/example.css"/>
+
+</head>
+<body>
+
+<div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
+
+<div class="container" id="container"></div>
+
+<script type="text/html" id="tpl_home">
+    <div class="page">
+        <div class="page__hd">
+            <h1 >
+                <p>成信大专业</p>
+            </h1>
+        </div>
+        <div class="page__bd page__bd_spacing">
+            <ul>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">大气科学学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Atmospheric1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-大气科学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Atmospheric2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-应用气象学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">资源环境学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Resources1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-环境科学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Resources2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-环境工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Resources3" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-地理信息科学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Resources4" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-遥感科学与技术</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Resources5" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-测绘工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">应用数学学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Application1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-信息与计算科学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Application2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-数学与应用数学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">统计学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Statistics1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-国际经济与贸易</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Statistics2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-金融工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="Statistics3" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-统计学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Statistics4" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-经济统计学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">文化艺术学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Culture1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-汉语言文学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Culture2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;- 汉语国际教育 </p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="Culture3" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-社会工作 </p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Culture4" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;- 视觉传达  </p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">外国语学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="English1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-英语</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="English2" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-翻译</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">管理学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Management1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-市场营销</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Management2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-财务管理</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="Management3" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-会计学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Management4" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-人力资源管理</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="Management5" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-旅游管理</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Management6" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-会展经济与管理</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Management7" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-行政管理</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">物流学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Logistics1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-电子商务</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Logistics2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-物流工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="Logistics3" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-物流管理</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Logistics4" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-工程管理</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="Logistics5" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-信息管理与信息系统</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">电子工程学院（大气探测学院）</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Electronic1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-电子信息工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Electronic2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-电子信息科学与技术</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Electronic3" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-生物医学工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">控制工程学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Control1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-测控技术与仪器</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Control2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-自动化</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="Control3" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-电气工程及其自动化</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Control4" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-机械电子工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a class="weui-cell weui-cell_access js_item" data-id="Control5" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-机器人工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">通信工程学院(微电子学院)</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Communication1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-通信工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Communication2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-微电子科学与工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Communication3" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-集成电路设计与集成系统</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">计算机学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Computer1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-计算机科学与技术</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Computer2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-数字媒体技术</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Computer3" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-智能科学与技术</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">软件工程学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Software1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-软件工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Software2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-空间信息与数字技术</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Software3" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-数据科学与大数据技术</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">网络空间安全学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Internet1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-网络工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Internet2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-信息安全</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Internet3" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-物联网工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="weui-flex js_category">
+                        <p class="weui-flex__item">光电工程学院</p>
+                    </div>
+
+                    <div class="page__category js_categoryInner">
+                        <a class="weui-cell weui-cell_access js_item" data-id="Photoelectric1" href="javascript:;">
+                            <div class="weui-cell__bd" >
+                                <p >&emsp;-电子科学与技术</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Photoelectric2" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-光电信息科学与工程</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                        <a  class="weui-cell weui-cell_access js_item" data-id="Photoelectric3" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p >&emsp;-应用物理学</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            var winH = $(window).height();
+            var categorySpace = 10;
+
+            $('.js_item').on('click', function(){
+                var id = $(this).data('id');
+                window.pageManager.go(id);
+            });
+            $('.js_category').on('click', function(){
+                var $this = $(this),
+                    $inner = $this.next('.js_categoryInner'),
+                    $page = $this.parents('.page'),
+                    $parent = $(this).parent('li');
+                var innerH = $inner.data('height');
+                bear = $page;
+
+                if(!innerH){
+                    $inner.css('height', 'auto');
+                    innerH = $inner.height();
+                    $inner.removeAttr('style');
+                    $inner.data('height', innerH);
+                }
+
+                if($parent.hasClass('js_show')){
+                    $parent.removeClass('js_show');
+                }else{
+                    $parent.siblings().removeClass('js_show');
+
+                    $parent.addClass('js_show');
+                    if(this.offsetTop + this.offsetHeight + innerH > $page.scrollTop() + winH){
+                        var scrollTop = this.offsetTop + this.offsetHeight + innerH - winH + categorySpace;
+
+                        if(scrollTop > this.offsetTop){
+                            scrollTop = this.offsetTop - categorySpace;
+                        }
+
+                        $page.scrollTop(scrollTop);
+                    }
+                }
+
+                var winH = $(window).height();
+                var $foot = $('body').find('.page__ft');
+                if($foot.length < 1) return;
+
+                if($foot.position().top + $foot.height() < winH){
+                    $foot.addClass('j_bottom');
+                }else{
+                    $foot.removeClass('j_bottom');
+                }
+            });
+        });
+</script>
+</script>
+
+
+
+<script type="text/html" id="tpl_Atmospheric1">
+    <div class="page">
+    <div class="page__hd">
+    <h1 class="page__title">大气科学</h1>
+    <p class="page__desc">所属院系：<span >大气科学学院 </span></p>
+</div>
+<div class="page__bd">
+    <article class="weui-article">
+    <section>
+    <p><span>学制：</span>四年</p>
+<p><span>授予学位：</span>理学学士</p>
+<p><span>学费标准: </span>4900</p>
+</section>
+<section>
+<p><span>专业特色</span></p>
+<p>
+本专业培养具有坚实数理基础，掌握大气科学基本理论和基本技能，具备从事天气分析预报、数值天气预报产品使用等能力，具有国际视野和创新精神的专门人才。主要面向大气科学相关领域重点培养“气象台天气预报员”、“人工影响天气高级工程师”、“防灾减灾气象服务人员”以及高校教师和科研人员等复合型高级专门人才。
+</p>
+<p></p>
+</section>
+<section>
+<p><span>主要学科</span></p>
+<p>
+大气流体力学、大气物理学、动力气象学、天气学原理、气象统计分析与预报方法、数值天气预报、中国天气、气象综合观测、现代气候学基础
+</p>
+<p></p>
+</section>
+<section>
+<p><span>就业去向</span></p>
+<p>
+全国气象系统、国家海洋局、民航空管系统、机场系统、航空公司、环境监测局、中国人民解放军火箭军
+</p>
+<p></p>
+</section>
+</article>
+</div>
+</div>
+</script>
+<script type="text/html" id="tpl_Atmospheric2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">应用气象学</h1>
+            <p class="page__desc">所属院系：<span >大气科学学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>理学学士</p>
+                    <p><span>学费标准: </span>4900</p><br /><br />
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养具有坚实的数理基础，掌握大气科学及应用气象学专业的基础知识和基本技能，具备从事气候分析预测、气象知识综合应用和专业软件设计的基本技能，具有国际视野和创新精神的专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        大气流体力学、大气物理学、动力气象学、天气学原理、气象统计分析与预报方法、数值天气预报、中国天气、应用气象综合观测
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        全国气象系统、国家海洋局、民航空管系统、机场系统、航空公司、环境监测局、中国人民解放军火箭军
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Resources1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">环境科学</h1>
+            <p class="page__desc">所属院系：<span >资源环境学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        主要学习环境污染防治、生态环境保护、环境监测、环境影响评价、环境规划、环境管理、清洁生产审核等知识，具备良好的创新精神、较强的实际动手能力、良好职业道德和团队合作精神
+                    </p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        环境监测、环境工程学、环境影响评价、生态环境工程、环境化学、环境规划与管理、环境工程制图、环境工程原理
+                    </p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国人民解放军火箭军、全国各气象局、全国各国土资源局、四川省核工业地质局、中国科学院研究所、四川省环境保护科学研究院
+                    </p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Resources2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">环境工程</h1>
+            <p class="page__desc">所属院系：<span >资源环境学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业面向环境污染治理，尤其在大气环境及大气污染治理领域，培养符合我国经济发展建设需要和国际人才市场需求，具有可持续发展理念、清洁生产思想、社会责任感和工程职业道德、健康心智体魄、创新意识和团队精神、宽广国际视野；掌握系统的环境工程基础理论和专业知识
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        环境工程原理，大气污染控制工程、水污染控制工程，固体废弃物处理与处置，工程流体力学，环境监测，环境工程制图
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国人民解放军火箭军、全国各气象局、全国各国土资源局、四川省核工业地质局、中国科学院研究所、四川省环境保护科学研究院
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Resources3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">地理信息科学</h1>
+            <p class="page__desc">所属院系：<span >资源环境学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        引进国际CDIO工程教育理念，培养学生用地理信息空间数据采集、管理、存储、分析、建模及可视化技术解决实际问题，在测绘、国土、气象、环境、水利、农林等相关领域从事GIS应用、设计开发、生产管理和行政管理工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        自然地理、地图学、测量学、地理信息系统原理、GNSS原理及其应用、空间数据采集与管理、GIS空间分析、GIS应用开发
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国人民解放军火箭军、全国各气象局、全国各国土资源局、四川省核工业地质局、中国科学院研究所、四川省环境保护科学研究院
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Resources4">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">遥感科学与技术</h1>
+            <p class="page__desc">所属院系<span >资源环境学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        具备扎实的遥感专业理论基础和全面的系统思维能力、较强的实际动手能力，掌握遥感数据获取与处理、专题信息提取、遥感数据建模与反演、数字化测绘和遥感信息服务等基本理论和技能
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        遥感原理与方法、遥感数字图像处理、摄影测量学、遥感可视化技术、微波遥感、大气遥感、遥感地学分析
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国人民解放军火箭军、全国各气象局、全国各国土资源局、四川省核工业地质局、中国科学院研究所、四川省环境保护科学研究院
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Resources5">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">测绘工程</h1>
+            <p class="page__desc">所属院系：<span >资源环境学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        掌握地面测量、海洋测量、空间测量、摄影测量，从事国家基础测绘、城市和工程建设、资源勘察与开发及管理等测量工程、地图与地理信息系统的设计等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        测量学、全球定位系统、数字摄影测量、控制测量、工程测量、大比例尺数字测图
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国人民解放军火箭军、全国各气象局、全国各国土资源局、四川省核工业地质局、中国科学院研究所、四川省环境保护科学研究院
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Application1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">信息与计算科学专业</h1>
+            <p class="page__desc">所属院系：<span >应用数学学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>理学学士</p>
+                    <p><span>学费标准: </span>4900</p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业以学校工科优势为依托，以数学为基础、信息为对象，计算机为工具，将数学、信息科学与计算机科学有机结合。设置科学计算与应用软件、数据分析与处理两个专业方向，具备良好的科学计算、数据分析及应用软件开发能力。毕业生能在IT行业从事软件开发及测试、算法设计、大数据分析与处理等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        数学分析、高等代数、空间解析几何、概率论与数理统计、C语言程序设计、数据结构与算法设计、数值分析、数据分析、数学建模与数学实验、Python语言基础、数学能力综合实践
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        杭州阿里云、招商银行、四川金融控股集团有限公司、九州集团、中国邮政储蓄银行、中国移动、平安银行、成都数之联科技有限公司等单位
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Application2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">数学与应用数学专业</h1>
+            <p class="page__desc">所属院系：<span >应用数学学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>理学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业依托学校的工科优势，强调数学基础知识和应用能力的培养，设置数据挖掘与统计分析和数学模型与软件设计两个方向，具备从事数据开发与处理等方面能力的应用型人才。毕业生能在IT行业从事数学建模及软件开发、数据挖掘与分析等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        数学分析、高等代数、概率论与数理统计、数据库原理与应用、常微分方程、数据结构与算法设计、数学建模与数学实验、Java程序设计、数据分析、运筹学、Python语言基础、数学能力综合实践
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        杭州阿里云、招商银行、四川金融控股集团有限公司、九州集团、中国邮政储蓄银行、中国移动、平安银行、成都数之联科技有限公司等单位
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Statistics1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">国际经济与贸易</h1>
+            <p class="page__desc">所属院系：<span >统计学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>经济学学士</p>
+                    <p><span>学费标准: </span>4400</p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业学习掌握国际贸易基本知识与基本技能，熟悉国际贸易惯例和规则，强化涉外英语和国际贸易的操作技能。依托学校信息技术与统计学科的优势，重点培养学生利用电子商务技术处理跨境电商业务的能力，主要面向政府机构及企事业单位培养从事贸易业务及贸易管理的高级商务人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        中国对外贸易概论、宏观经济学、微观经济学、政治经济学、计量经济学、国际贸易、国际金融、国际贸易实务、国际结算、外贸英语函电、商务英语等。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        统计局、调查队系统、税务系统、中国银行业监督管理委员会、中国银行、中国建设银行、中国农业发展银行、中国农业银行、中国工商银行、中国平安保险、调查咨询公司。
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Statistics2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">金融工程</h1>
+            <p class="page__desc">所属院系：<span >统计学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>经济学学士</p>
+                    <p><span>学费标准: </span>4400</p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业重点掌握金融理论、数理统计、计算机技术和计量决策等基础理论，培养学生进行定量分析的能力、实务操作的能力、金融创新的能力及金融投资的能力。主要面向西南金融领域重点培养“金融分析师”及从事金融、财务管理等工作的应用型高级专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        金融工程学、金融学、计量经济学、证券投资学、公司金融、金融风险管理、财务分析、固定收益证券、国际金融（双语）、商业银行经营与管理、估值与风险建模等。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        统计局、调查队系统、税务系统、中国银行业监督管理委员会、中国银行、中国建设银行、中国农业发展银行、中国农业银行、中国工商银行、中国平安保险、调查咨询公司。
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Statistics3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">统计学</h1>
+            <p class="page__desc">所属院系：<span >统计学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>理学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业旨在培养德才兼备的高素质统计人才，具有较为扎实的数学基础，掌握统计学的基本思想、基本理论与方法以及相关的计算机技术，擅长大数据的搜集、整理，能熟练运用计算机和统计软件进行数据分析与数据挖掘，能够适应不同领域统计基础理论研究和应用。毕业后能够在政府相关部门、企事业单位、金融行业、信息产业等从事大数据分析、大数据应用、大数据管理等工作，或在高等院校及科研机构进一步从事研究和教学工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        概率论，数理统计，统计学原理，回归分析，时间序列分析，多元统计分析，随机过程，数据挖掘
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        统计局、调查队系统、税务系统、中国银行业监督管理委员会、中国银行、中国建设银行、中国农业发展银行、中国农业银行、中国工商银行、中国平安保险、调查咨询公司。
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Statistics4">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">经济统计学</h1>
+            <p class="page__desc">所属院系：<span >统计学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>经济学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        形成“统计工作实践+信息技术+统计方法”为特色人才培养模式。主要面向政府统计部门和金融、保险等企事业单位，培养与统计工作要求相适应、具有良好的数理与经济学理论基础，具备厚实经济统计学理论方法基础，熟练运用现代信息技术，进行统计设计、统计调查、数据处理、统计分析的应用型高级统计专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        统计学原理、微观经济学、宏观经济学、概率论与数理统计、市场调查与预测、企业经营统计学、计量经济学、时间序列分析、国民经济核算、多元统计分析
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        统计局、调查队系统、税务系统、中国银行业监督管理委员会、中国银行、中国建设银行、中国农业发展银行、中国农业银行、中国工商银行、中国平安保险、调查咨询公司。
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Culture1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">汉语言文学</h1>
+            <p class="page__desc">所属院系：<span >文化艺术学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>文学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业依托学校信息类学科优势，培养“文化信息传播”方向的应用型、复合型汉语言文学专门人才。立足于汉语言文学文字功底，培养较好掌握现代信息传播技术，在文化、教育、出版、新闻传媒等企事业单位和政府机关，从事高级文秘、行政管理、新闻宣传策划、教育教学等的高级专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        现代汉语、古代汉语、语言学概论、中国古代文学、中国现当代文学、外国文学、写作、文学概论、新闻学概论、文化传播学、新闻采访与写作、编辑出版实践、策划学、新媒体概论、新媒体编辑、广告策划与创意等
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        广东省中山市禁毒协会、泸州老窖国窖公司、国务院妇儿工委、成都市民政局、成都市慈善总会、成都市锦江区社会组织发展基金会、美国扬莱福（Yuang Life）、三星（中国）有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Culture2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">汉语国际教育</h1>
+            <p class="page__desc">所属院系：<span >文化艺术学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>文学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业结合“双语、双文化、双能力”，培养通晓汉英双语教学、对外汉语教学、跨文化交际的应用型、复合型高级专门人才。致力于中国文化的国际传播与对外文化交流的发展，在国内外学校从事汉语教学和管理，在相关政府部门、外贸机构、新闻出版单位、企事业单位从事语言文化传播与交流。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        现代汉语Ⅰ、现代汉语Ⅱ、古代汉语Ⅰ、古代汉语Ⅱ、中国现当代文学Ⅰ、中国现当代文学Ⅱ、语言学概论、汉语国际教育概论、对外汉语教学实习等
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        广东省中山市禁毒协会、泸州老窖国窖公司、国务院妇儿工委、成都市民政局、成都市慈善总会、成都市锦江区社会组织发展基金会、美国扬莱福（Yuang Life）、三星（中国）有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Culture3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">社会工作</h1>
+            <p class="page__desc">所属院系：<span >文化艺术学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>法学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业旨在培养新时期具有良好的思想道德、了解尊重文化多样、适时自我调适、关心服务社会、创新精神的基本素质，具备一定的社会科学知识、掌握社会工作专业知识，具有自主学习、批判反思、研究设计、沟通协调、服务提供等职业能力，能够从事社会调查研究、社会问题分析、社会服务策划、社会服务提供等服务地方的复合型高级应用型专业人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        社会学概论、社会工作概论、文化人类学、社会研究方法、社会工作理论、社会心理学、社会行政、个案工作、小组工作、社区工作
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        广东省中山市禁毒协会、泸州老窖国窖公司、国务院妇儿工委、成都市民政局、成都市慈善总会、成都市锦江区社会组织发展基金会、美国扬莱福（Yuang Life）、三星（中国）有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Culture4">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">视觉传达设计</h1>
+            <p class="page__desc">所属院系：<span >文化艺术学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>艺术学学士</p>
+                    <p><span>学费标准: </span>7200</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业旨在培养网络广告艺术方向培养具有强烈的责任意识、科学的理性精神、领先的审美判断、系统的专业知识，掌握网络广告的设计思维、表达、沟通与管理的技能，能从事网络广告设计与研发、推动专业发展、承担网络广告设计教育以及相关研究工作，具备自主创业意识与能力，适应网络广告设计的策划、创意、制作、运营与管理需求的复合型应用专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        数字动漫艺术方向培养适应国家经济发展，具有良好人文素养、艺术修养与审美能力，适应数字时代和信息社会发展，具有较开阔的视野和良好的沟通能力，掌握游戏设计、动画、漫画的创作、制作及相关工具应用的基础知识、基本理论和方法，能够在传媒及文化创意产业的相关领域，从事数字游戏、动漫的策划、创作、制作、运营与管理的创新型专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        广东省中山市禁毒协会、泸州老窖国窖公司、国务院妇儿工委、成都市民政局、成都市慈善总会、成都市锦江区社会组织发展基金会、美国扬莱福（Yuang Life）、三星（中国）有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_English1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">英语</h1>
+            <p class="page__desc">所属院系：<span >外国语学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>文学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业基于“英语+商务/教育”的模式，旨在培养德、智、体、美全面发展，具备扎实的语言基本功、厚实的文化知识和深厚的人文素养，能够掌握必要的相关专业知识，具备基本的国际商务能力或英语语言教育能力的英语人才。本专业毕业生能熟练运用英语在政府、涉外企事业、文化旅游、新闻出版、教学科研等部门从事商务、外事、翻译、管理、经贸、教育、文化交流等实际工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        专业基础类：英语写作、综合英语、高级英语、英语语法、学术写作 专业类：商务模块：国际市场营销（英语）、国际贸易实务（英语） 教育模块：教育心理学、英语教学法
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        北京大学对外交流中心会议与交流部、美国泛亚航空学校、美国辉瑞公司、Chanel(香奈儿)、中国路桥工程有限责任公司、中安安产科技集团、卡塔尔江苏工程设备有限公司、国泰置业有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_English2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">翻译</h1>
+            <p class="page__desc">所属院系：<span >外国语学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>文学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养具有良好道德品质与职业素养、扎实的英汉双语知识与能力，较好掌握英汉口笔译专业技能，具备良好的跨文化交际能力、人际交往能力及翻译职业能力的应用型翻译人才。毕业生能够胜任信息科技产业与商贸领域的相关语言服务工作，语言服务领域的日常口笔译工作以及外事、经贸、教育、文化、科技等领域中一般难度的口笔译或其他跨文化交流工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        专业基础类：综合英语、科技英语阅读、英语写作、科技英语写作 专业类：高级英语、专题笔译实践、专题口译实践、信息科技英语翻译、商务英语翻译实务、计算机辅助翻译
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        北京大学对外交流中心会议与交流部、美国泛亚航空学校、美国辉瑞公司、Chanel(香奈儿)、中国路桥工程有限责任公司、中安安产科技集团、卡塔尔江苏工程设备有限公司、国泰置业有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Management1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">市场营销</h1>
+            <p class="page__desc">所属院系：<span >管理学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业依托我校在信息和统计领域的学科优势，注重学生可持续发展的知识、能力和人文素养，培养在大数据背景下，能够运用现代信息分析技术和数理模型支撑营销决策，具有卓越营销专业思维及营销管理能力的应用型、领导型、复合型和创新型高级专门人才。继续深造的同学具有较强的学术研究能力，从事营销实战工作的同学具有较强的营销战略思维、营销策划、营销组织和执行能力。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        管理学、经济学、会计学、财务管理、统计学、市场营销学、消费者行为学、销售管理、营销策划、营销工程
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        党政机关科研院校、行业协会、中国工商银行、成都富力丽思卡尔顿酒店、中国邮政储蓄银行、中铁二局、中国水电五局、中国建设银行、中国农业银行、恒大地产集团有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Management2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">财务管理</h1>
+            <p class="page__desc">所属院系：<span >管理学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业下设理财规划、管理会计和资产评估三个微方向，旨在培养具有社会主义核心价值观、具有社会责任感、公共意识和创新精神，适应国家经济建设需要，具有人文精神和科学素养，熟练掌握现代经济管理理论、财务管理理论和方法，具有国际视野、本土情怀、创新意识、团队精神和沟通技能，毕业后能够结合经济发展的新形势，对企事业单位理财活动和个人理财活动进行系统化的梳理、设计、规划、执行和分析，并运用财务管理的理论与方法进行有效决策和实施运行，既能在各类工商企业、金融企业等企事业单位及政府部门从事财务、会计、税务等管理方面的工作，又能在科研机构进行财务管理的教学、科研工作的应用型、复合型和创新型高级专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        管理学原理、会计学原理、中级财务会计、税法、财务管理、会计信息系统、成本管理会计、财务分析、计算机财务管理、高级财务管理
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        党政机关科研院校、行业协会、中国工商银行、成都富力丽思卡尔顿酒店、中国邮政储蓄银行、中铁二局、中国水电五局、中国建设银行、中国农业银行、恒大地产集团有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Management3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">会计学</h1>
+            <p class="page__desc">所属院系：<span >管理学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业秉承成都信息工程大学“以人为本，追求卓越”的办学理念，注重培养学生具备比较扎实的经济学、管理学理论基础，能够系统掌握会计、审计、财务管理、税务等专业知识和专业技能，具备会计、审计职业所需求的知识、能力以及素质。主要培养能在涉外企业及国内工商企业、金融企业、中介机构、政府机构、事业单位及其他相关部门胜任会计审计、财务管理及相关工作的应用型、复合型、外向型和创新型专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        会计学：管理学原理、经济学原理、会计学原理、中级财务会计、高级财务会计、审计学原理、财务管理、成本会计、管理会计、会计信息系统 会计学(ACCA方向)：经济学原理、管理学原理、会计学原理、中级财务会计、财务会计（英文）、管理会计（英文）、审计与认证业务（英文）、财务管理（英文）、税务（英文）、战略商业报告（英文）
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        党政机关科研院校、行业协会、中国工商银行、成都富力丽思卡尔顿酒店、中国邮政储蓄银行、中铁二局、中国水电五局、中国建设银行、中国农业银行、恒大地产集团有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Management4">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">人力资源管理</h1>
+            <p class="page__desc">所属院系：<span >管理学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业旨在培养德、智、体、美全面发展，具有社会责任感、公共意识和创新精神，适应社会经济发展要求，具有人文精神与科学素养，熟练掌握人力资源管理理论、方法与技术，具备全球视野、信息技术应用、承受压力和良好团队沟通协作能力，能够在企业事业单位、行政部门特别是高新技术企业从事人力资源管理及相关管理工作，并成长为职业经理人或人力资源管理专家的应用型、复合型、创新型高级专门人才。毕业生主要在政府、企事业单位人力资源部门从事人才招聘与培训、薪酬设计、绩效管理等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        管理学原理、人力资源管理概论、组织行为学、企业文化、管理信息系统、劳动经济学、人力资源选聘与测评（含课程设计）、职业生涯管理（含课程设计）、薪酬管理（含课程设计）、劳动关系管理
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        党政机关科研院校、行业协会、中国工商银行、成都富力丽思卡尔顿酒店、中国邮政储蓄银行、中铁二局、中国水电五局、中国建设银行、中国农业银行、恒大地产集团有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Management5">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">旅游管理</h1>
+            <p class="page__desc">所属院系：<span >管理学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养德、智、体、美全面发展，掌握现代旅游管理基础理论、专门知识和专业技能，具有国际视野、管理能力、服务意识、创新精神，能够在“在线旅行社（OTA）”等新兴旅游企业、酒店、旅行社、旅游景区及相关旅游企事业单位，从事与旅游业相关的经营、管理、策划、规划、咨询、培训、教育等工作的复合性、创新性的应用型高级专门人才。毕业生主要在旅游及涉旅领域从事旅游创意策划、旅游规划、旅游产品研发、旅游服务管理等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        旅游学概论、管理学原理、经济学原理、统计学原理、旅游管理信息系统、旅游电子商务、旅游电子政务、旅游市场营销、旅游资源规划与开发、旅行社经营管理、饭店管理、景区管理、旅游英语
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        党政机关科研院校、行业协会、中国工商银行、成都富力丽思卡尔顿酒店、中国邮政储蓄银行、中铁二局、中国水电五局、中国建设银行、中国农业银行、恒大地产集团有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Management6">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">会展经济与管理</h1>
+            <p class="page__desc">所属院系：<span >管理学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养具备管理学、经济学、统计学、计算机科学与技术等基础知识，掌握现代会展经济管理基础理论、专门知识和专业技能，具有国际视野、管理能力、服务意识、创新精神，能够从事与会展业相关的经营、管理、策划、规划、咨询、培训、教育等工作应用型高级专业人才。毕业生主要在政府、企事业单位的会展业务部门从事会展策划、节事管理、会展场馆管理等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        会展概论、管理学原理、经济学原理、财务管理、旅游学概论、会展策划与实务、会展管理信息系统、会展电子商务、会展网络营销、场馆服务管理、会展项目管理、节事策划与管理、会展英语
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        党政机关科研院校、行业协会、中国工商银行、成都富力丽思卡尔顿酒店、中国邮政储蓄银行、中铁二局、中国水电五局、中国建设银行、中国农业银行、恒大地产集团有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Management7">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">行政管理</h1>
+            <p class="page__desc">所属院系：<span >管理学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业旨在培养具有一定马克思主义理论素养和现代公共精神，德、智、体、美全面发展，掌握管理学、经济学、政治学、法学等行政管理领域的基础理论知识和专业技能，具备较强的组织协调、人际沟通和业务能力，能充分应用现代信息技术在党政机关、企事业单位、社会团体从事管理以及科研工作的复合型、应用型高级专门人才。毕业生主要在政府、企事业单位从事行政管理等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        管理学原理、经济学原理、行政法学、组织行为学、地方政府管理、公共部门人力资源管理、公共经济学、公共行政学、电子政务、公文写作
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        党政机关科研院校、行业协会、中国工商银行、成都富力丽思卡尔顿酒店、中国邮政储蓄银行、中铁二局、中国水电五局、中国建设银行、中国农业银行、恒大地产集团有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Logistics1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">电子商务</h1>
+            <p class="page__desc">所属院系：<span >物流学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        培养具有现代经济、管理和信息技术多学科知识，能够综合构思、设计、实践和运行电子商务项目，具有网络营销综合实践能力和商务数据分析能力，从事电子商务管理、应用与服务的复合型、创新型高级专业人才。毕业生主要进入互联网企业、软件与服务业、新零售与外贸流通企业、教育机构、金融机构等企事业单位工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        管理学原理、经济学原理、运筹学、电子商务概论、网络营销、客户关系管理、企业资源计划、供应链管理
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        支付宝（杭州）信息技术有限公司、淘宝（中国）软件有限公司、沃尔玛 联合利华、京东集团 中国银行、中铁二局集团
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Logistics2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">物流工程</h1>
+            <p class="page__desc">所属院系：<span >物流学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        培养系统掌握物流工程理论、技术与方法，具有现代经营理念和创新意识，具备物流系统规划、设计、运营、咨询，物流工程项目策划、预测、设计和实施，工程新技术与物流装备设计、开发、集成、运用，物流信息系统设计、开发、维护和使用等能力的高级专门人才。毕业生主要进入大型物流企业、物流园区和物流管理部门工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        运筹学、供应链管理、物流工程、自动控制原理、物流技术与设备、物流系统仿真、物流系统规划与设计、物流信息系统、工程实践-物流综合设计
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        支付宝（杭州）信息技术有限公司、淘宝（中国）软件有限公司、沃尔玛 联合利华、京东集团 中国银行、中铁二局集团
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Logistics3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">物流管理</h1>
+            <p class="page__desc">所属院系：<span >物流学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        培养具有创新精神和实践能力，熟悉现代物流运营模式和法规，具备较强计算机和信息管理技术应用能力，系统掌握物流管理理论知识，能够从事物流系统优化、物流业务运作及物流管理的复合型高级管理人才。毕业生主要进入大型物流企业和物流管理部门工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        经济学原理、管理学原理、运筹学、物流学导论、供应链管理、生产与运作管理、运输管理、配送管理、物流信息系统
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        支付宝（杭州）信息技术有限公司、淘宝（中国）软件有限公司、沃尔玛 联合利华、京东集团 中国银行、中铁二局集团
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Logistics4">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">工程管理</h1>
+            <p class="page__desc">所属院系：<span >物流学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        培养具备管理学、经济学、计算机科学与技术等基础知识，熟悉工程项目招投标及土木工程施工业务，具有招投标业务及工程建设等相关法律法规知识，系统掌握现代项目管理理论与方法的应用型高级专门人才。毕业生主要在政府、企事业单位的项目管理及工程部门从事项目招投标、工程造价、项目规划及工程现场管理等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        管理学原理、经济学原理、工程经济学、工程力学、工程结构、工程项目管理、工程估价、运筹学、建设法规、工程招投标设计
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        支付宝（杭州）信息技术有限公司、淘宝（中国）软件有限公司、沃尔玛 联合利华、京东集团 中国银行、中铁二局集团
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Logistics5">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">信息管理与信息系统</h1>
+            <p class="page__desc">所属院系：<span >物流学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>管理学学士</p>
+                    <p><span>学费标准: </span>4400</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        培养具备现代管理学理论基础、计算机科学技术知识及应用能力和系统思维能力，掌握信息资源管理和信息系统分析与设计方法的应用型高级专门人才。毕业学生具有管理和技术综合技能，非常适应互联网时代的人才需求，主要在政府信息化部门、IT企业及其它单位从事信息管理和分析、信息系统建设规划和信息化咨询等方面工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        管理学原理、经济学原理、管理信息系统、数据结构、数据库原理及应用、信息资源管理、信息系统分析与设计、企业资源计划与应用、商务智能与数据挖掘
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        支付宝（杭州）信息技术有限公司、淘宝（中国）软件有限公司、沃尔玛 联合利华、京东集团 中国银行、中铁二局集团
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Electronic1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">电子信息工程</h1>
+            <p class="page__desc">所属院系：<span >电子工程学院（大气探测学院）</span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业旨在培养具有健全人格、良好的人文科学素养、社会责任感以及工程职业道德；具备电子信息基础知识，具有解决电子信息领域复杂工程问题的能力，良好交流沟通、团队合作、项目管理以及具有终身学习的能力
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        电路分析基础、模拟电子技术、数字电路与逻辑数字、微处理器与微计算机系统、信号与系统、C语言程序设计、电磁场与电磁波、通信电子线路、现代通信原理、数字信号处理、数字图像处理、气象雷达原理与系统
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        全国气象系统、民航空中交通管理系统、中国人民解放军火箭军
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Electronic2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">电子信息科学与技术</h1>
+            <p class="page__desc">所属院系：<span >电子工程学院（大气探测学院）</span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        具有较强的交流与团队合作、项目管理以及终身学习的能力；能够在电子、通信及计算机等相关领域尤其是微波射频领域，从事产品设计、研制开发、工程管理等工作的宽口径、复合型卓越工程师人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        电路分析基础、模拟电子技术、数字电路与逻辑数字、微处理器与微计算机系统、信号与系统、C语言程序设计、电磁场与电磁波、通信电子线路、现代通信原理、数字信号处理、微波技术与天线、射频电路
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        全国气象系统、民航空中交通管理系统、中国人民解放军火箭军
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Electronic3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">生物医学工程</h1>
+            <p class="page__desc">所属院系：<span >电子工程学院（大气探测学院）</span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        具有较强的交流与团队合作、项目管理以及终身学习的能力；能够在医疗设备与医学信号处理相关领域从事产品设计、技术研发、工程管理的应用型高级工程技术人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        C语言程序设计、模拟电子技术、数字电路与逻辑设计、信号与系统、微处理器与微计算机系统、数字信号处理、人体解剖生理学、医学仪器原理、生物医学传感器、数字图像处理
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        全国气象系统、民航空中交通管理系统、中国人民解放军火箭军
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Control1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">测控技术与仪器</h1>
+            <p class="page__desc">所属院系：<span >控制工程学院</span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养拥有健康心智体魄和良好人文素养，具备扎实的仪器、仪表专业基础和技术，具有对智能化、网络化测控系统进行设计开发、维护管理的高级专门人才。毕业生在智能仪器仪表、测控系统、传感器、计算机软件和硬件应用等相关高新技术领域内的研究机构、企事业单位、社会组织、政府机关及其他相关部门从事科研、生产、管理、销售等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        电路分析基础、信号与系统、传感器与检测技术、电子测量原理、测试信号分析与处理、智能仪器仪表设计、网络化测控技术
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国国电集团公司、国家电网系统、中国移动通信集团四川有限公司、四川长虹电器股份有限公司、攀钢集团工程有限公司、中铁二局、创维集团有限公司、成都九洲电子信息系统股份有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Control2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">自动化</h1>
+            <p class="page__desc">所属院系：<span >控制工程学院</span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养具有扎实的控制系统的基本理论、基本知识和专业技能，能够在运动控制、制造系统自动化与智能化、机器人控制、模式识别、智能监控系统等领域从事系统分析、设计、运行与维护、开发的高级专门人才。毕业生在各行业自动化领域相关的研究机构、企事业单位、社会组织、政府机关及其他相关部门从事科研、生产、管理、销售等领域的实际工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        电路分析基础、信号与系统、自动控制原理、电力电子技术、现代控制理论、嵌入式系统原理与设计、控制系统软件设计 、机器视觉及应用
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国国电集团公司、国家电网系统、中国移动通信集团四川有限公司、四川长虹电器股份有限公司、攀钢集团工程有限公司、中铁二局、创维集团有限公司、成都九洲电子信息系统股份有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Control3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">电气工程及其自动化</h1>
+            <p class="page__desc">所属院系：<span >控制工程学院</span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养具有电气工程相关的发电、供配电技术，以及新能源行业内相关运行、控制、检测、网络化等领域专业知识及技能的高级专门人才。毕业生在供配电及新能源领域相关的研究机构、企事业单位、社会组织、政府机关及其他相关部门从事科研、生产、管理等方面的工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        模拟电子技术、自动控制原理、电力电子技术、电力系统工程基础、电力系统继电保护、高电压技术、供配电技术、智能电网技术
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国国电集团公司、国家电网系统、中国移动通信集团四川有限公司、四川长虹电器股份有限公司、攀钢集团工程有限公司、中铁二局、创维集团有限公司、成都九洲电子信息系统股份有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Control4">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">机械电子工程</h1>
+            <p class="page__desc">所属院系：<span >控制工程学院</span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养具有机械电子工程基础理论与专业知识，具备机械、控制系统、机器人工程领域相关设计、维护、管理能力的高级专门人才。毕业生在制造业、机器人行业相关的研究机构、企事业单位、社会组织、政府机关及其他相关部门从事科研、生产、管理、销售等领域的实际工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        机械制图、电工与电子技术、数字电路与逻辑设计、工程力学、机械原理、机电控制系统、机器人学基础、工业机器人
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国国电集团公司、国家电网系统、中国移动通信集团四川有限公司、四川长虹电器股份有限公司、攀钢集团工程有限公司、中铁二局、创维集团有限公司、成都九洲电子信息系统股份有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Control5">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">机器人工程</h1>
+            <p class="page__desc">所属院系：<span >控制工程学院</span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养掌握机器人工程相关的基础理论和专业知识，具备工业机器人与服务机器人系统设计、开发、制造、运行及维护能力的高素质复合型应用人才。毕业生能够在工业企业、科研院所等机构的机器人系统设计与应用领域内，从事与机器人相关的技术开发、产品与系统设计及应用、设备与技术管理及相关工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        控制工程基础、嵌入式系统与Linux、工业机器人、移动式机器人与特种机器人、工业机器人
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国国电集团公司、国家电网系统、中国移动通信集团四川有限公司、四川长虹电器股份有限公司、攀钢集团工程有限公司、中铁二局、创维集团有限公司、成都九洲电子信息系统股份有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Communication1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">通信工程</h1>
+            <p class="page__desc">所属院系：<span >通信工程学院(微电子学院) </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养的学生具备电子、通信、计算机等大电类基础知识，注重掌握信号与系统、通信原理、高频电子线路、计算机网络等学科基础理论，突出对通信软件、嵌入式系统、通信网络的仿真和设计能力的培养
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        高频电子线路、脉冲与数字电路、信号与系统、数字信号处理、现代通信原理、计算机网络、移动通信、天线原理与设计、微波通信、嵌入式系统设计
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国移动、中国联通和中国电信国家电网、创维集团有限公司、四川迈普通信技术股份有限公司、网易（杭州）网络有限公司中信国安信息科技有限公司、支付宝（杭州）信息技术有限公司、戴尔（成都）有限公司、百度中国有限公司、江苏省邮电规划设计院有限责任公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Communication2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">微电子科学与工程</h1>
+            <p class="page__desc">所属院系：<span >通信工程学院(微电子学院) </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养的学生具备电子技术的基础知识，注重掌握模拟集成电路设计、数字集成电路设计、IC版图设计等集成电路设计技术，突出对数字集成电路系统和版图设计能力的培养
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        脉冲与数字电路、固体物理、半导体物理、微电子器件原理、数字集成电路设计、模拟集成电路设计、射频电路设计、集成电路CAD、微电子工艺、IC版图设计、VerilogHDL语言与FPGA技术
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国移动、中国联通和中国电信国家电网、创维集团有限公司、四川迈普通信技术股份有限公司、网易（杭州）网络有限公司中信国安信息科技有限公司、支付宝（杭州）信息技术有限公司、戴尔（成都）有限公司、百度中国有限公司、江苏省邮电规划设计院有限责任公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Communication3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">集成电路设计与集成系统</h1>
+            <p class="page__desc">所属院系：<span >通信工程学院(微电子学院) </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养学生具备集成电路基本理论、集成电路设计基本方法，掌握集成电路设计的EDA工具，熟悉电路、计算机、信号处理、通信等相关系统知识
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        C/C++语言、数据结构与程序设计、Verilog、电路分析基础、模拟电子线路基础、数字电路与系统设计基础、数字信号处理、半导体器件电子学、集成电路原理与设计、集成电路工艺技术、集成电路EDA技术、嵌入式系统原理与设计、版图设计、低功耗设计
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国移动、中国联通和中国电信国家电网、创维集团有限公司、四川迈普通信技术股份有限公司、网易（杭州）网络有限公司中信国安信息科技有限公司、支付宝（杭州）信息技术有限公司、戴尔（成都）有限公司、百度中国有限公司、江苏省邮电规划设计院有限责任公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Computer1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">计算机科学与技术</h1>
+            <p class="page__desc">所属院系：<span >计算机学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养人文素质、工程知识、业务能力协调发展，能够在信息技术产业或其他企事业单位信息技术部门，特别是软件系统研发、嵌入式开发、大数据分析、人工智能应用等领域从事分析、设计、实现、测试、运行维护以及经营管理等方面工作的高素质应用型工程技术人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        程序设计、数据结构、操作系统原理、数据库原理及应用、计算机网络、计算机组成原理、软件工程、项目管理、人工智能、信息安全、云计算、大数据、计算机图形学、软件测试技术、汇编语言、嵌入式技术及应用。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        腾讯科技有限公司、百度中国有限公司、华为技术有限公司、TCL通讯科技有限公司、广东步步高电子工业有限公司、中国建设银行股份有限公司、深圳市创维电器科技有限公司、IBM 、戴尔公司、公安边防部队
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Computer2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">数字媒体技术</h1>
+            <p class="page__desc">所属院系：<span >计算机学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养人文素质、工程知识、业务能力协调发展，能够在数字媒体技术产业或其他企事业单位信息技术部门，特别是数字娱乐和交互设计应用领域从事分析、设计、实现、测试、运行维护以及经营管理等方面工作的高素质应用型工程技术人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        程序设计、数据结构、操作系统原理、数据库原理及应用、计算机网络、计算机组成原理、软件工程、项目管理、人工智能、计算机图形学、游戏程序设计、艺术设计、游戏美术设计、交互设计、新媒体互动技术、三维动画。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        腾讯科技有限公司、百度中国有限公司、华为技术有限公司、TCL通讯科技有限公司、广东步步高电子工业有限公司、中国建设银行股份有限公司、深圳市创维电器科技有限公司、IBM 、戴尔公司、公安边防部队
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Computer3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">智能科学与技术</h1>
+            <p class="page__desc">所属院系：<span >计算机学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养人文素质、工程知识、业务能力协调发展，面向四川省新一代信息技术产业，与智能科技深度融合的四川省传统优势产业，以及智能气象行业，从事智能系统、智能信息处理、智能行为决策、智能产品等方面的科学研究、开发设计、工程应用、决策管理和教学等工作的高素质、复合型应用工程技术人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        程序设计、数据结构、操作系统原理、数据库原理及应用、计算机网络、计算机组成原理、软件工程、项目管理、人工智能、机器学习、计算机图形学、计算机视觉、云计算、大数据、脑与认知科学导论。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        腾讯科技有限公司、百度中国有限公司、华为技术有限公司、TCL通讯科技有限公司、广东步步高电子工业有限公司、中国建设银行股份有限公司、深圳市创维电器科技有限公司、IBM 、戴尔公司、公安边防部队
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Software1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">软件工程</h1>
+            <p class="page__desc">所属院系：<span >软件工程学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养适应科技发展和地方经济建设需求、具备扎实数理基础知识，熟练掌握软件工程的基本理论、方法与技术，具备一定的创新能力，能够根据特定行业要求从事软件设计、开发、测试、部署、运行维护等方面工作的高素质应用型工程技术人才。主要面向政府机关、科研机构、企事业单位，培养“高级软件开发工程师”、“高级软件架构师”、“高级软件测试工程师”。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        C语言程序设计1A、数据结构、操作系统原理、数据库原理及应用A、计算机网络A、软件设计工程、软件制造工程、软件测试与质量保证、工程实践1—4
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国气象局、各省市气象局、百度中国有限公司、阿里巴巴网络技术有限公司、淘宝（中国）软件有限公司、中国移动通信集团四川有限公司、腾讯科技(深圳)有限公司、四川迈普通信技术股份有限公司、四川久远银海股份有限公司、TCL通讯成都研发中心、北京超图软件股份有限公司、华为技术有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Software2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">空间信息与数字技术</h1>
+            <p class="page__desc">所属院系：<span >软件工程学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养适应国家气象行业和地方经济建设需求、具备扎实数理基础知识，熟练掌握软件工程的基本理论、方法与技术，具备一定的创新能力，能够根据气象等行业要求从事相关领域的软件设计、开发、测试、运维等方面工作的高素质应用型工程技术人才。主要面向政府机关、科研机构、企事业单位，培养从事基于遥感、GIS、虚拟仿真、网络、数据库及多媒体等技术的“高级空间信息技术开发人员”。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        数据结构、面向对象程序设计（C++）A、工程导论、空间分析与建模、气象地理信息应用系统设计与实现、气象遥感数字图像处理、工程实践3（空间建模）、工程实践4（气象信息系统）
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国气象局、各省市气象局、百度中国有限公司、阿里巴巴网络技术有限公司、淘宝（中国）软件有限公司、中国移动通信集团四川有限公司、腾讯科技(深圳)有限公司、四川迈普通信技术股份有限公司、四川久远银海股份有限公司、TCL通讯成都研发中心、北京超图软件股份有限公司、华为技术有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Software3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">数据科学与大数据技术</h1>
+            <p class="page__desc">所属院系：<span >软件工程学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业依据数据科学与大数据行业的需求，培养适应科技发展和地方经济建设需求，具备扎实的数理基础知识和一定的创新能力，熟练掌握基于数据分析的基本理论、方法和技术，能从事大数据服务的软件系统设计开发、数据分析管理等方面工作的复合型、高素质、应用型的数据科学和大数据工程技术人才。主要面向企事业单位、科研机构、政府机关，培养具备在数据科学与大数据技术理论框架指导下，开展大数据处理、管理、分析和应方面的科学技术人才；实施大数据系统设计与开发、模型和算法研发的工程技术人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        数据结构、面向对象程序设计（Java）A、操作系统原理、数据库原理及应用A、计算机网络A、数据挖掘与分析、数据科学导论、数学方法工程实践、信息检索基础、离散结构
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国气象局、各省市气象局、百度中国有限公司、阿里巴巴网络技术有限公司、淘宝（中国）软件有限公司、中国移动通信集团四川有限公司、腾讯科技(深圳)有限公司、四川迈普通信技术股份有限公司、四川久远银海股份有限公司、TCL通讯成都研发中心、北京超图软件股份有限公司、华为技术有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Internet1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">网络工程</h1>
+            <p class="page__desc">所属院系：<span >网络空间安全学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养具有扎实的计算机网络基本理论、基本技能及综合运用能力，具有一定网络规划、设计、维护与管理的工程素养，具有网络系统设计与开发能力，具有国际视野和创新精神的专门人才。主要面向网络行业重点培养“网络应用系统开发工程师”、“网络运维工程师”和“网络安全工程师”等应用型高级专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        数据结构、操作系统、计算机网络、计算机组成原理、网络服务配置与管理、路由与交换技术、网络协议分析、信息安全理论与技术、WEB应用开发技术
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国联合网络通信有限公司、四川迈普通信技术股份有限公司、网易（杭州）网络有限公司、奇虎360科技有限公司、支付宝（杭州）信息技术有限公司、淘宝（中国）软件有限公司、百度中国有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Internet2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">信息安全</h1>
+            <p class="page__desc">所属院系：<span >网络空间安全学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养具有宽厚、扎实的信息安全基本理论、基本知识、基本技能及综合运用能力；具备信息系统的安全性设计与信息安全软、硬件产品开发的工程素质，遵守信息安全行业道德规范，具有较强的实践动手能力和创新精神的专门人才。重点培养“信息安全服务工程师”、“信息安全产品研发工程师”等应用型高级专门人才。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        C语言程序设计、数据库原理及应用、操作系统原理、数据结构、面向对象程序设计、计算机网络、路由与交换技术
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        中国联合网络通信有限公司、四川迈普通信技术股份有限公司、网易（杭州）网络有限公司、奇虎360科技有限公司、支付宝（杭州）信息技术有限公司、淘宝（中国）软件有限公司、百度中国有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Internet3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">物联网工程</h1>
+            <p class="page__desc">所属院系：<span >网络空间安全学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养具备多学科交叉知识，具有物联网思维，掌握物联网系统设计和开发，具有较强的物联网安全意识的，服务于物联网及其相关产业的应用型高级专门人才。学生掌握从前端采集，中间传输到后端数据分析与展示的一系列技术。培养“物联网嵌入式开发工程师”，“移动互联网应用开发工程师”，“物联网系统集成与维护工程师”和“物联网系统安全加固工程师”。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        信息安全理论与技术、物联网安全技术、智能物联网应用技术、物联网标识感知技术、物联网数据处理技术、嵌入式系统原理及应用、无线网络技术、网络编程技术
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        国安系统、深圳市公安局、云南省公安厅、中国联合网络通信有限公司、四川迈普通信技术股份有限公司、网易（杭州）网络有限公司、奇虎360科技有限公司、支付宝（杭州）信息技术有限公司、淘宝（中国）软件有限公司、百度中国有限公司
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Photoelectric1">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">电子科学与技术</h1>
+            <p class="page__desc">所属院系：<span >光电工程学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业分为光电子器件与技术、微电子材料与器件两个方向，培养学生在光电子与微电子领域的专业知识、实验技能及创新应用能力，使学生能开展光电子与微电子器件及系统的设计、制造、测试、封装与集成技术的开发与应用。本专业面向科研机构及企事业单位，主要在激光技术、光通信、光电传感与探测、光电成像与显示技术、微电子器件设计与制造、集成电路等电子信息产业与行业从事技术开发、产品应用及管理等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        高等数学、普通物理、电路分析基础、模拟电子技术、脉冲与数字电路、信号与系统、固体物理、半导体物理；物理光学、光电子器件、光电子技术、激光原理与技术、集成光学、液晶显示技术、现代传感器技术；微波技术、微波器件设计CAD、电子材料与元器件、集成电路工艺原理、微系统集成技术、混合集成电路与器件、现代电子测量技术
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        华为技术有限公司、大疆科技有限公司、成都中电熊猫显示科技有限公司、成都天马微电子有限公司、京东方、天威新能源
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Photoelectric2">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">光电信息科学与工程</h1>
+            <p class="page__desc">所属院系：<span >光电工程学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>工学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业分为光电信息显示、光电图像处理两个方向，培养掌握光电信息技术领域扎实的理论基础、实验技能和创新能力，具备光电信息检测、显示、机器视觉等相关的原理和应用技术的高级专门人才。本专业学生面向科研机构及企事业单位，主要在光电传感、电子显示、光学元件设计、视觉检测、图像识别与智能制造等行业从事技术开发、产品应用及管理等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        高等数学、普通物理、电路分析基础、模拟电子技术、数字电路与逻辑设计、信号与系统、微处理器与微计算机系统、应用光学、物理光学、光学设计及CAD；信息光学、光电子技术、光电系统设计、光电检测技术；数字信号处理、光电成像技术、液晶显示技术、光电系统综合设计；面向对象程序设计C++、数字图像处理、机器视觉、光电图像处理综合设计
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        华为技术有限公司、大疆科技有限公司、成都中电熊猫显示科技有限公司、成都天马微电子有限公司、京东方、天威新能源
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl_Photoelectric3">
+    <div class="page">
+        <div class="page__hd">
+            <h1 class="page__title">应用物理学</h1>
+            <p class="page__desc">所属院系：<span >光电工程学院 </span></p>
+        </div>
+        <div class="page__bd">
+            <article class="weui-article">
+                <section>
+                    <p><span>学制：</span>四年</p>
+                    <p><span>授予学位：</span>理学学士</p>
+                    <p><span>学费标准: </span>4900</p><p></p>
+                </section>
+                <section>
+                    <p><span>专业特色</span></p>
+                    <p>
+                        本专业培养方向为半导体器件物理，培养具有扎实的物理学基础、熟练的实验技能及科学适应能力，具备运用物理学原理和方法解决自然科学和工程技术问题的能力，且适应高新技术发展需求的理工型综合人才。本专业学生面向科研机构及企事业单位，主要在新材料与新能源、集成电路制造、智能传感技术、电子显示、照明技术等行业从事技术开发、产品应用及管理等工作。
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>主要学科</span></p>
+                    <p>
+                        高等数学、电路分析基础、模拟电子技术、数字电路与逻辑设计、力学、电磁学、物理光学、理论物理概论、固体物理；半导体物理、半导体器件物理、材料科学基础、材料制备科学与技术、薄膜物理与技术、集成电路工艺原理；现代传感器技术、液晶显示技术、锂离子电池科学与技术、发光材料及应用、光伏器件与光伏技术
+                    </p>
+                    <p></p>
+                </section>
+                <section>
+                    <p><span>就业去向</span></p>
+                    <p>
+                        华为技术有限公司、大疆科技有限公司、成都中电熊猫显示科技有限公司、成都天马微电子有限公司、京东方、天威新能源
+                    </p>
+                    <p></p>
+                </section>
+            </article>
+        </div>
+    </div>
+</script>
+
+
+<script type  = "text/javascript" src = "http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+
+<script src="./public/style/zepto.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.2.1/weui.min.js"></script>
+<script src="./public/style/example.js"></script>
+</body>
+</html>
