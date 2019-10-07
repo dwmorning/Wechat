@@ -1,38 +1,4 @@
-/*
-  获取access_token ：
-    是什么？微信调用接口全局唯一凭据
 
-    特点：
-      1. 唯一的
-      2. 有效期为2小时，提前5分钟请求
-      3. 接口权限 每天2000次
-
-    请求地址：
-      https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
-    请求方式：
-      GET
-
-    设计思路：
-      1. 首次本地没有，发送请求获取access_token，保存下来（本地文件）
-      2. 第二次或以后：
-        - 先去本地读取文件，判断它是否过期
-          - 过期了
-            - 重新请求获取access_token，保存下来覆盖之前的文件（保证文件是唯一的）
-          - 没有过期
-            - 直接使用
-
-     整理思路：
-       读取本地文件（readAccessToken）
-          - 本地有文件
-            - 判断它是否过期(isValidAccessToken)
-              - 过期了
-                - 重新请求获取access_token(getAccessToken)，保存下来覆盖之前的文件（保证文件是唯一的）(saveAccessToken)
-              - 没有过期
-                - 直接使用
-          - 本地没有文件
-            - 发送请求获取access_token(getAccessToken)，保存下来（本地文件）(saveAccessToken)，直接使用
- */
-//只需要引入request-promise-native
 const rp = require('request-promise-native');
 const request = require('request');
 //fs模块
@@ -45,13 +11,18 @@ const {appID, appsecret} = require('../config');
 //引入menu模块
 const menu = require('./menu');
 //引入api模块
-const api = require('../libs/api');
+const api = require('../utils/api');
 //引入工具函数
-const {writeFileAsync, readFileAsync} = require('../libs/utils');
+const {writeFileAsync, readFileAsync} = require('../utils/tool');
+
 
 
 //定义类，获取access_token
 class Wechat {
+    constructor () {
+
+    }
+
     /**
      * 用来获取access_token
      */
@@ -275,6 +246,56 @@ class Wechat {
                 return Promise.resolve(res);
             })
     }
+
+    /**
+     * 用来创建自定义菜单
+     * @param menu 菜单配置对象
+     * @return {Promise<any>}
+     */
+    createMenu (menu) {
+        return new Promise(async (resolve, reject) => {
+            try {
+                //获取access_token
+                const data = await this.fetchAccessToken();
+                //定义请求地址
+                const url = `${api.menu.create}access_token=${data.access_token}`;
+                //发送请求
+                const result = await rp({method: 'POST', url, json: true, body: menu});
+                resolve(result);
+            } catch (e) {
+                reject('createMenu方法出了问题：' + e);
+            }
+        })
+    }
+
+    /**
+     * 用来删除自定义菜单的
+     * @return {Promise<any>}
+     */
+    deleteMenu () {
+        return new Promise(async (resolve, reject) => {
+            try {
+                const data = await this.fetchAccessToken();
+                //定义请求地址
+                const url = `${api.menu.delete}access_token=${data.access_token}`;
+                //发送请求
+                const result = await rp({method: 'GET', url, json: true});
+                resolve(result);
+            } catch (e) {
+                reject('deleteMenu方法出了问题：' + e);
+            }
+        })
+    }
 }
+(async () => {
+    //模拟测试
+    const w = new Wechat();
+    //删除之前定义的菜单
+    let result = await w.deleteMenu();
+    console.log(result);
+    //创建新的菜单
+    result = await w.createMenu(menu);
+    console.log(result);
+})()
 
 module.exports = Wechat;
