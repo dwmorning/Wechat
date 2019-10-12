@@ -7,7 +7,7 @@ module.exports = {
             "type" : "view",
             "name" : "成信大专业",
             "key" : "V1001_MY_ACCOUNT",
-            "url":"http://www.dwc88.xyz/subject.html"
+            "url":`${url}/subject`
         }, {
             "type" : "view",
             "name" : "招生计划",

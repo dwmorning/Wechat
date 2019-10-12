@@ -8,8 +8,7 @@ const sha1 = require('sha1');
 const config = require('../config');
 //引入tool模块
 const {getUserDataAsync, parseXMLAsync, formatMessage} = require('../utils/tool');
-//引入template模块
-const template = require('./template');
+
 //引入reply模块
 const reply = require('./reply');
 

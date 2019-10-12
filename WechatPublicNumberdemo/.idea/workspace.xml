@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35afc5c2-c5e7-4008-942e-1c2267ccf9ea" name="Default Changelist" comment="" />
+    <list default="true" id="35afc5c2-c5e7-4008-942e-1c2267ccf9ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dome/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dome/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dome/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dome/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dome/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dome/utils/access_token.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dome/utils/access_token.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dome/wechat/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/dome/wechat/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dome/wechat/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/dome/wechat/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dome/wechat/reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/dome/wechat/reply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dome/wechat/template.js" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,28 +22,85 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="-252">
+              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/dome/router/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-567" />
+            <state relative-caret-position="672">
+              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package-lock.json">
+        <entry file="file://$PROJECT_DIR$/dome/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3078" />
+            <state relative-caret-position="140">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome/public/history.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6837">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome/wechat/menu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome/wechat/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome/wechat/reply.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome/wechat/wechat.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -41,21 +108,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/WechatPublicNumber.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/dome/wechat/reply.js" />
+        <option value="$PROJECT_DIR$/dome/wechat/auth.js" />
+        <option value="$PROJECT_DIR$/dome/router/index.js" />
+        <option value="$PROJECT_DIR$/dome/wechat/menu.js" />
+        <option value="$PROJECT_DIR$/dome/app.js" />
+        <option value="$PROJECT_DIR$/dome/config/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1698" />
-    <option name="y" value="2" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="x" value="-1809" />
+    <option name="y" value="170" />
+    <option name="width" value="1385" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -63,34 +132,72 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="WechatPublicNumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WechatPublicNumber" type="462c0819:PsiDirectoryNode" />
+              <item name="WechatPublicNumberdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WechatPublicNumberdemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WechatPublicNumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WechatPublicNumber" type="462c0819:PsiDirectoryNode" />
+              <item name="WechatPublicNumberdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WechatPublicNumberdemo" type="462c0819:PsiDirectoryNode" />
               <item name="dome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WechatPublicNumberdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WechatPublicNumberdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="dome" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WechatPublicNumberdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WechatPublicNumberdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="dome" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WechatPublicNumberdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WechatPublicNumberdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="dome" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WechatPublicNumberdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WechatPublicNumberdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="dome" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WechatPublicNumberdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WechatPublicNumberdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="dome" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dome" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Warehouse\WechatPublicNumberdemo\dome" />
       <recent name="D:\Warehouse\WechatPublicNumber\dome" />
     </key>
   </component>
@@ -127,30 +234,36 @@
       <option name="presentableId" value="Default" />
       <updated>1570377356423</updated>
       <workItem from="1570377359184" duration="153000" />
+      <workItem from="1570499655093" duration="1395000" />
+      <workItem from="1570573622580" duration="1802000" />
+      <workItem from="1570623164162" duration="2942000" />
+      <workItem from="1570689900930" duration="1293000" />
+      <workItem from="1570756319947" duration="6286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153000" />
+    <option name="totallyTimeSpent" value="13871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1927" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17305152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27053824" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -160,24 +273,72 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dome/node_modules/co/LICENSE">
+    <entry file="file://$PROJECT_DIR$/dome/node_modules/co/LICENSE" />
+    <entry file="file://$PROJECT_DIR$/package.json" />
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/dome/wechat/template.js" />
+    <entry file="file://$PROJECT_DIR$/dome/wechat/wechat.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome/app.js">
+    <entry file="file://$PROJECT_DIR$/dome/public/history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="-6837">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/dome/router/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567" />
+        <state relative-caret-position="672">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/dome/wechat/menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3078" />
+        <state relative-caret-position="280">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome/wechat/reply.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome/wechat/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
       </provider>
     </entry>
   </component>

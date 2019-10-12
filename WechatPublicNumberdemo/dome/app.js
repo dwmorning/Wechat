@@ -28,8 +28,72 @@ app.set('view engine','html');
 const wechatApi = new Wechat();
 //页面路由
 app.use('/public',express.static('public'));
+
+app.get("/", function (req, res) {
+    var token = "atguiguHTML0258";
+    var signature = req.query.signature;
+    var timestamp = req.query.timestamp;
+    var echostr = req.query.echostr;
+    var nonce = req.query.nonce;
+
+    var oriArray = new Array();
+    oriArray[0] = nonce;
+    oriArray[1] = timestamp;
+    oriArray[2] = token;
+    oriArray.sort();
+
+    var original = oriArray.join('');
+    var sha = sha1(original)
+
+    if (signature === sha) {
+        //验证成功
+        res.send(echostr)
+    } else {
+        //验证失败
+        res.send({ "message": "error" })
+    }
+
+});
 app.get('/plan',async(req,res)=> {
-    res.sendFile('plan.html', { root:'./public'});
+
+    /*
+    生成js-sdk使用的签名：
+      1. 组合参与签名的四个参数：jsapi_ticket（临时票据）、noncestr（随机字符串）、timestamp（时间戳）、url（当前服务器地址）
+      2. 将其进行字典序排序，以'&'拼接在一起
+      3. 进行sha1加密，最终生成signature
+   */
+    //获取随机字符串
+    const noncestr = Math.random().toString().split('.')[1];
+    //获取时间戳
+    const timestamp = Date.now();
+    //获取票据
+    const {ticket} = await wechatApi.fetchTicket();
+
+    // 1. 组合参与签名的四个参数：jsapi_ticket（临时票据）、noncestr（随机字符串）、timestamp（时间戳）、url（当前服务器地址）
+    const arr = [
+        `jsapi_ticket=${ticket}`,
+        `noncestr=${noncestr}`,
+        `timestamp=${timestamp}`,
+        `url=${url}/search`
+    ]
+
+    // 2. 将其进行字典序排序，以'&'拼接在一起
+    const str = arr.sort().join('&');
+    console.log(str);  //xxx=xxx&xxx=xxx&xxx=xxx
+
+    // 3. 进行sha1加密，最终生成signature
+    const signature = sha1(str);
+
+    //渲染页面，将渲染好的页面返回给用户
+    // res.render('search', {
+    //     signature,
+    //     noncestr,
+    //     timestamp
+    // });
+    res.sendFile('plan.html', { root:'./public',
+        signature,
+        noncestr,
+        timestamp});
 })
 app.get('/history',async(req,res)=> {
     res.sendFile('history.html', { root:'./public'});

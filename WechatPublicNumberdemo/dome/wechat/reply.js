@@ -9,14 +9,6 @@ const wechatApi = new Wechat();
 
 module.exports = async message => {
 
-    //定义options
-    let options = {
-        toUserName: message.FromUserName,
-        fromUserName: message.ToUserName,
-        createTime: Date.now(),
-        msgType: 'text'
-    }
-
     //设置回复用户消息的具体内容
     let content = '';
     if (message.MsgType === 'event') {
